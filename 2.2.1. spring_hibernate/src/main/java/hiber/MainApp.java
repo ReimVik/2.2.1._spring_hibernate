@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import hiber.config.AppConfig;
+import hiber.config.AppConfigure;
 import hiber.model.Car;
 import hiber.model.User;
 import hiber.service.UserService;
@@ -13,7 +13,7 @@ import hiber.service.UserService;
 public class MainApp {
    public static void main(String[] args) throws SQLException {
       AnnotationConfigApplicationContext context = 
-            new AnnotationConfigApplicationContext(AppConfig.class);
+            new AnnotationConfigApplicationContext(AppConfigure.class);
 
       UserService userService = context.getBean(UserService.class);
 

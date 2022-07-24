@@ -8,5 +8,8 @@ public interface UserDao {
    void add(User user);
    List<User> listUsers();
 
-   List<User> getUsersByCar(String model, int series);
+    @SuppressWarnings("unchecked")
+    List<User> getListUsers();
+
+    List<User> getUsersByCar(String model, int series);
 }
